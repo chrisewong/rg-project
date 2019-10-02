@@ -8,12 +8,23 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
 }
 
-
+html {
+    border: 10px solid black;
+    margin: auto;
+    height: 350%;
+    width: 90%;
+    
+    
+}
 body{
-    background-color: brown;
+    background-color:tan;
+    
 }
+
 
 .container{
     width: 90%;
@@ -23,7 +34,7 @@ body{
   .navbar{
       width: 100%;
       height: 80px;
-      background-color: gray;
+      background-color:tan;
       overflow: hidden;
       line-height: 70px;
       
@@ -32,9 +43,11 @@ body{
   .logo{
       float: left;
       
+      
   }
   .logo h1 a{
     text-decoration: none;
+    color: white;
   }
   
 .menu {
@@ -49,21 +62,46 @@ body{
     line-height: 70px;
     text-align: center;
     list-style: none;
+    
 
 }
 .menu li a{
     text-decoration: none;
+    color: white;
 }
-/* .box{
-    background: gray;
-    width: 50%;
-    border: 15px;
+.top{
+    position: relative;
+    background-image: url("http://rg.local/wp-content/uploads/2019/09/image1.jpg");
+    background-size: cover;
+    width: 75%;
+    height: 70px;
     padding: 50px;
-    margin: 50px auto auto auto;
+    margin: 0 auto;
     
 }
+.intro {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-top: -50px;
 
-.background{
+}
+.top h1 {
+    font-family: Helvetica;
+    font-size: xx-large;
+    height: 10px;
+    padding: 20px;  
+    margin-top: 0;  
+    
+}
+.intro h2{
+    font-family: Helvetica;
+    font-size: x-large;
+    height: 10px;
+    padding: 20px;
+}
+
+/* .background{
     margin: 50px; 
     display: block;
     margin-left: auto;
@@ -76,22 +114,19 @@ body{
     
 
     
-}
-.img{
-    height: 200px;
-    width: 50%;
-    top: 20px;  
 } */
+
+
 @keyframes slidy {
     0% { left: 0%; }
     20% { left: 0%; }
     25% { left: -100%; }
     45% { left: -100%; }
     50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
+    100% { left: -200%; }
+    /* 75% { left: -300%; }
     95% { left: -300%; }
-    100% { left: -400%; }
+    100% { left: -400%; } */
     }
     
     body { margin: 0; } 
@@ -108,13 +143,13 @@ body{
     }
 #slider{
     display: block;
-    width: 65%;
+    width: 40%;
     height: 350px;
-    border: 1px solid blue;
+    border: 1px solid white;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 175px;
+    margin-top: 50px;
 }
 
 img {
@@ -142,21 +177,91 @@ img {
 
 
 .info{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 40px;
+    display: relative;
+    border: 10px solid black;
+    padding: 80px;
+    height: 1300px;
+    margin: 10px auto;
+    min-width: 1000px;
+     
 }
-.pg {
+
+
+.description{
+    display: absolute;
+    border: 10px solid black;
+    width: 25%;
+    height: 500px;
+    box-sizing: content-box;
+    padding: 30px;
+    float: left;
+    
+}
+.info > div{
+    float: left;
+    
+}
+.description > h2{
+    padding: 10px;
+}
+
+.float-right{
+    border: 10px solid black;
+    width: 40%;
+    height: 500px;
+    padding: 20px;
+    margin: 30px;
+}
+.float-right > div{
+    float: right;
+}
+
+.comments{
+    padding: 40px;
+    
+}
+form {
+    display: inline-block;
+    width: 85%;
+    border: 1px solid black;
+    padding: 40px;
     text-align: center;
-    color: green;
+    margin-right: auto;
+    margin-left: auto;
+}
+label{
+    font-size: 1.5em;
+}
+input{
+    font-size: .5em;
+    width: 30%;
+    height: 10px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+/* @media screen and (min-width: 601px) {
+    div.comments {
+      font-size: 40px;
+    }
+  }
+
+@media screen and (min-width: 600px) {
+    div.comments {
+        font-size: 10px;
+    }
+} */
+
+/* .pg {
+    text-align: center;
+    color: white;
     position: relative;
     right: 50px;
     top: 150px;
     height: 200px;
     
-}
+} */
 .doc{
     position: absolute;
     text-align: center;
